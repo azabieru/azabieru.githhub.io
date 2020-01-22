@@ -77,14 +77,13 @@ window.onload = function () {
 				State = 2;
 			} else if (Point < 9) {
 				State = 3;
-			} else if (Point < 12) {
+			} else if(Point < 12) {
 				State = 4;
-			} else if (Point < 15){
+			} else if (Point < 15) {
 				State = 5;
-			}else {
+			} else {
 				State = 6;
 			}
-
 		};
 
 
@@ -119,9 +118,9 @@ window.onload = function () {
 				Zoyama.x += 20;						//移動します。
 				Zoyama.y = Math.random() * 400;			//ｙ座標の位置を枚フレーム毎にランダム決定
 			}
-			if (State == 5) {
-				Zoyama.x += 35;
-				Zoyama.y = math.random() * 300;
+			if (State == 6) {
+				Zoyama.x += 30;
+				Zoyama.y = math.random() * 400;
 			}
 
 			//現在のテキスト表示
